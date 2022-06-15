@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Chunk.gd" type="Script" id=1]
+[ext_resource path="res://Ressources/Textures/Tiles/Dirt.png" type="Texture" id=2]
+
+[node name="Chunk" type="Node2D"]
+script = ExtResource( 1 )
+points_per_edge = 8
+jaggy_line_force = 32
+shard_count = 40
+zone_arround_point = 80
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+texture = ExtResource( 2 )
+texture_scale = Vector2( 0.1, 0.1 )
